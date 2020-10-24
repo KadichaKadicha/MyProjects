@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.hero{
+    padding: 20px 0 200px;
+    text-align: center;
+    background: black;
+    font-family: 'Domine', sans-serif;
+}
+.hero-img{
+    width: 400px;
+
+}
+.my-link{
+    margin-top: 25px;
+}
+h1{
+    font-size: 40px;
+    color: #5d365a;
+
+    padding: 10px 0;
+    text-transform: uppercase;
+
+
+}
+h2 {
+    width: 100%;
+    /*color: #b317b1;*/
+    color: #796e85;
+
+
+}
+a, a > span {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+}
+a:before, a:after, a > span:before, a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+.my-projects{
+    text-align: center;
+}
+.my-link {
+    display: inline-block;
+    overflow: hidden;
+}
+.my-link:before, .my-link:after {
+    right: 0;
+    bottom: 0;
+    background: #d634d3;
+}
+.my-link:before {
+    width: 100%;
+    height: 4px;
+    transform: translateX(-100%);
+}
+.my-link:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+.my-link > span {
+    display: flex;
+    padding: 10px 100px;
+}
+.my-link > span:before, .my-link > span:after {
+    left: 0;
+    top: 0;
+    background: #f6dc39;
+}
+.my-link > span:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+.my-link > span:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+.my-link:hover:before, .my-link:hover:after, .my-link:hover > span:before, .my-link:hover > span:after {
+    transform: translate(0, 0);
+}
